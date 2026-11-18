@@ -1,4 +1,9 @@
 body{
     background:black;
     color:aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: center;
 }
