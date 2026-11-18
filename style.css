@@ -7,3 +7,13 @@ body{
 p{
     text-align: center;
 }
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
