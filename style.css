@@ -44,7 +44,7 @@ h3{
 p{
     text-align: center;
     font-size: 15px;
-    margin: 8px;
+    margin: 20px;
 }
 
 p span{
@@ -112,6 +112,7 @@ header{
     align-items: baseline;
     position: sticky;
     background: white;
+    border-bottom: 1px solid #000;
 }
 
 .entete{
@@ -161,7 +162,7 @@ aside{
 
 .grid2{
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 285px 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 1fr;
 }
