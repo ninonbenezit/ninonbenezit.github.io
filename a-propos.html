@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a-propos</title>
 
+     <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <p>Je suis étudiant de design graphique à l'ELMAD Auguste Renoir.</p>
+    <header><a href="index.html"><h1>Ninon Bénézit</h1></a></header>
+
+    <p>Je suis étudiante en design graphique à l'ELMAD Auguste Renoir.</p>
+   
+    <!-- formulaire -->
+    <main>
+    <div class="form-container">
+        <h2>Me Contacter</h2>
+        <form method="POST" action="https://formsubmit.co/ninonloubenezit@gmail.com">
+            <label for="subject">Nom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Objet</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="email">Message</label>
+            <input type="text" id="message" name="message" required>
+
+            <button class="button" type="submit">Send</button>
+        </form>
+    </div>
+    </main>
+
 </body>
 </html>

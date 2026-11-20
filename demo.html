@@ -8,6 +8,18 @@
         body{
             background: aquamarine;
         }
+        @media (min-width:900px){
+            body{
+                display: grid;
+                grid-template-columns: repeat(2);
+                gap: 24px;
+                background: blue;
+            }
+            p{
+                font-size:clamp(35px,4vw,48px);
+            }
+        }
+
         .button{
             background: azure;
             color: #000;
@@ -24,6 +36,7 @@
 </head>
 <body>
     <a class="button" href="#">sauce</a>
+    <p>Voila tous mes test ! Comme ils sont jolis, comme ils sont beaux.</p>
     <div class="grid">
         <img src="img/foule.jpg" alt="photomontage d'une foule" 
         width="500" height="350">
