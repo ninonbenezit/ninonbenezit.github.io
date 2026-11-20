@@ -157,7 +157,7 @@ aside{
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 8px;
+    gap: 7px;
 }
 
 .grid2{
