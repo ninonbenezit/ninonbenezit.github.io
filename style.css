@@ -167,6 +167,12 @@ aside{
     grid-template-areas: 1fr;
 }
 
+.grid3{
+    display: grid;
+    grid-template-columns: 67.5% 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
  .item-grid{
             display: grid;
         }

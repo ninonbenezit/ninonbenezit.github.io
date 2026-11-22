@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arachné</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Ninon Bénézit</h1></a>
+        <a class="button" href="a-propos.html">à propos</a>
+    </header>
+
+    <div class="entete"> 
+        <span>PratiqueLibre</span> 
+        <span class="center">Photographies</span> 
+        <span class="right">2023-2026</span>
+    </div>
+
+    <main>
+    <div class="grid3">
+        <div><img src="img/ccd_1.jpg" 
+        onclick="openModal();currentSlide(1)"></div>
+        <div><img src="img/ccd_2.jpg" 
+        onclick="openModal();currentSlide(2)"></div>
+        <div><img src="img/ccd_3.jpg" 
+        onclick="openModal();currentSlide(3)"></div>
+        <div><img src="img/ccd_4.jpg" 
+        onclick="openModal();currentSlide(4)"></div>
+        <div><img src="img/ccd_5.jpg" 
+        onclick="openModal();currentSlide(5)"></div>
+
+    </div>
+    </main>
+
+    <div class="modal" id="my-modal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <span class="close" onclick="closeModal()">&times;</span>
+            
+                <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlides(1)">&#10095;</a>
+            
+                <div class="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="modal.js"></script>
+</body>
+</html>
