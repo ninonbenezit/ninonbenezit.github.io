@@ -22,24 +22,25 @@
     </div>
 
     <main>
-        <div class="grid3">
-           <div><img src="img/photo_7.jpg" alt="photo porte monaie" 
-            width="500" height="350">
-            <img src="img/photo_6.jpg" alt="photo pince" 
-            width="500" height="350">
-            </div>
-        <div>
-            <img src="img/photo_1.jpg" alt="cyanotype" 
-            width="500" height="350">
-            <img src="img/photo_5.jpg" alt="cyanotype" 
-            width="500" height="350">
-            <img src="img/photo_4.jpg" alt="cyanotype" 
-            width="500" height="350">
-            <img src="img/photo_2.jpg" alt="cyanotype" 
-            width="500" height="350">
-        </div>
+        <div class="gallery">
+            <li><a href="img/photo_5.jpg"><img src="img/photo_5.jpg" loading="lazy"></a></li>
+            <li><a href="img/photo_6.jpg"><img src="img/photo_6.jpg" loading="lazy"></a></li>
+            <li><a href="img/photo_2.jpg"><img src="img/photo_2.jpg" loading="lazy"></a></li>
+            <li><a href="img/photo_7.jpg"><img src="img/photo_7.jpg" loading="lazy"></a></li>
+            <li><a href="img/photo_4.jpg"><img src="img/photo_4.jpg" loading="lazy"></a></li>
+            <li><a href="img/photo_1.jpg"><img src="img/photo_1.jpg" loading="lazy"></a></li>
         </div>
     </main>
+
+    <dialog class="lightbox" arial-label="Photo agrandie">
+        <figure>
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <button class="prev" aria-label="Photo précédente">‹</button>
+        <button class="next" aria-label="Photo suivante">›</button>
+        <button class="close" aria-label="Fermer">×</button>
+    </dialog>
 
     <div class="footer">
         <span class="left"><a class="button" href="copiercoller.html">Projet Précédent</a>
@@ -48,5 +49,6 @@
         </span>
     </div> 
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,38 +1,30 @@
-app.js
+const links = [...document.querySelectorAll('.gallery a')];
+const lightbox = document.querySelector('.lightbox');
+const image = lightbox.querySelector('img');
+const caption = lightbox.querySelector('figcaption');
+let current = 0;
 
-function openModal(){
-    document.getElementById('my-modal').style.display = "infine-flex";
-
-    document.body.style.overflow = "hidden";
+function show(index) {
+  current = (index + links.length) % links.length;
+  const thumbnail = links[current].querySelector('img');
+  image.src = links[current].href;
+  image.alt = thumbnail.alt;
+  caption.textContent = thumbnail.alt;
 }
 
-function closeModal(){
-    document.getElementById('my-modal').style.display = "none";
+links.forEach((link, index) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Sans JavaScript, le lien ouvre simplement l'image.
+    show(index);
+    lightbox.showModal();
+  });
+});
 
-    document.body.style.overflow = "auto";
-}
+lightbox.querySelector('.prev').addEventListener('click', () => show(current - 1));
+lightbox.querySelector('.next').addEventListener('click', () => show(current + 1));
+lightbox.querySelector('.close').addEventListener('click', () => lightbox.close());
 
-var slideInexJS = 1;
-showSlides(slideIndexJS);
-
-functionchangeSlides(n){
-    showSlides(slideIndesJS += n);
-}
-
-function currentSlide(n){
-    showSlides(slideIndexJS = n); 
-}
-
-function showSlides(n){
-    var i;
-    var slidesJS = document.getElementByClassNames("my-slides");
-
-    if (n > slidesJS.lenght){ slideIndesJS = 1; }
-    if (n < 1) { slideIndesJS = slideJS.lenght; }
-
-    for (i = 0; i < slideJS.lenght; i++){
-        slideJS[i].style.display = "none";
-    }
-
-    slideJS[slideIndesJS-1].style.display = "block";
-}
+lightbox.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowLeft') show(current - 1);
+  if (event.key === 'ArrowRight') show(current + 1);
+});
