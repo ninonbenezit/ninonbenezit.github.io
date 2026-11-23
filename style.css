@@ -42,7 +42,7 @@ h3{
 }
 
 p{
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     margin: 12px;
 }
@@ -75,18 +75,15 @@ textarea{
     background: white;
     color: #000;
     text-decoration: none;
-    border: 1px solid #000;
-    padding: 10px 20px;
-    border-radius: 25px;
+    padding: 9px;
     transition: 1s background;
+    font-size: 14px;
 }
 .button:hover{
     margin-left: auto;
-    background: #000;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 25px;
+    color: blue;
+    padding: 9px;
+    font-size: 14px;
 }
 
 a{
@@ -113,6 +110,7 @@ header{
     position: sticky;
     background: white;
     border-bottom: 1px solid #000;
+    padding-left: 5px;
 }
 
 .entete{
@@ -151,6 +149,30 @@ aside{
     position: sticky;
     background: azure;
     border-right: 1px solid #000;
+}
+
+.footer{
+    z-index: 1000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    bottom: 0px;
+    position: sticky;
+    background: white;
+    padding-top: 7px;
+    border-top: 1px solid #000;
+}
+.footer span{
+    display: block;
+}
+.footer .left{
+    text-align: left;
+}
+.footer .center{
+    text-align: center;
+}
+.footer .right{
+    text-align: right;
 }
 
 .grid{
