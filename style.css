@@ -43,8 +43,8 @@ h3{
 
 p{
     text-align: center;
-    font-size: 15px;
-    margin: 20px;
+    font-size: 14px;
+    margin: 12px;
 }
 
 p span{
@@ -149,7 +149,6 @@ aside{
     height: calc(600px - 160px);
     top: 160px;
     position: sticky;
-    align-self: start;
     background: azure;
     border-right: 1px solid #000;
 }
@@ -162,7 +161,7 @@ aside{
 
 .grid2{
     display: grid;
-    grid-template-columns: 285px 1fr;
+    grid-template-columns: 1fr 2.5fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 1fr;
 }
@@ -177,12 +176,12 @@ aside{
             display: grid;
         }
         .item-grid img,
-        .item-grid h3{
+        .item-grid h1{
             grid-column: 1/-1;
             grid-row: 1/-1;
         }
 
-        .item-grid h3{
+        .item-grid h1{
             color:#fff;
             background: #004cffc7;
             margin: 0;
@@ -192,6 +191,67 @@ aside{
             align-items:center;
             justify-items: center;
         }
-        .item-grid:hover h3{
+        .item-grid:hover h1{
             opacity:1;
         }
+
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    outline: 0;
+}
+.modal-header{
+    display: felx;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.close{
+    color: blue;
+    position-try: absolute;
+    right: 25px;
+    font-size: 40;
+    font-weight: 100;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+.close:hover, .close:focus{
+    color: blue;
+    text-decoration: none;
+    font-weight: 700;
+    opacity: 0.75;
+    transition: 0.5s ease;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.5;
+    top: 50%;
+    padding: 3rem 1rem;
+    color: blue;
+    margin-top: -50px;
+    font-size: 40px;
+    user-select: none;
+    transition: 0.5s ease;
+}
+.next{
+    right: 0;
+}
+.prev:hover, .next:hover{
+    opacity: 1;
+    transition: 0.5s ease;
+}
