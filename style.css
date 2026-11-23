@@ -220,8 +220,6 @@ aside{
 .gallery {
   display: grid;
   grid-template-columns: 67.5% 1fr;
-  grid-template-rows: auto 1fr auto;
-grid-template-areas: 1fr;
   padding: 4px;
   list-style: none;
 }
