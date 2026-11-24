@@ -49,10 +49,6 @@ p{
     margin: 12px;
 }
 
-p span{
-    color: blue;
-}
-
 form{
     display: flex;
     flex-direction: column;
@@ -74,9 +70,7 @@ textarea{
 /* boutons */ 
 .button{
     margin-left: auto;
-    background: white;
     color: #000;
-    border: solid 1px #000;
     border-radius: 2px;
     text-decoration: none;
     padding: 9px;
@@ -86,11 +80,13 @@ textarea{
 .button:hover{
     margin-left: auto;
     background: white;
-    border: dotted 1.5px #000;
-    border-radius: 2px;
-    color: #000;
+    color: #0000007b;
     padding: 8.5px;
     font-size: 14px;
+    font-style: oblique;
+}
+.nom:hover{
+    color: #0000007b;
 }
 
 /* général */ 
@@ -117,9 +113,44 @@ header{
     align-items: baseline;
     position: sticky;
     background: white;
-    border-bottom: 1px solid #000;
     padding-left: 5px;
 }
+
+    .scrolling-left{
+        position: relative;
+        overflow: hidden;
+        height: 20px;
+        background: white;
+        color: #000;
+        border-top: solid 1px #000;
+        border-bottom: solid 1px #000;
+        align-items: center;
+        margin-bottom: 8px;
+
+    }
+    .scrolling-text{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        white-space: nowrap;
+        display: inline-block;
+        font-style: oblique;
+        animation: scroll-left 25s linear infinite;
+    }
+    @keyframes scroll-left{
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    @media (max-width: 700px){
+        
+        .scrolling-text{
+            animation: scroll-left 15s linear infinite;
+        }
+    }
 
 .entete{
     z-index: 1000;
@@ -155,7 +186,7 @@ aside{
     height: calc(600px - 160px);
     top: 160px;
     position: sticky;
-    background: azure;
+    background: rgb(239, 249, 255);
     border-right: 1px solid #000;
 }
 
@@ -231,7 +262,7 @@ footer{
 
         .item-grid h1{
             color:#fff;
-            background: #004cffc7;
+            background: rgba(52, 90, 186, 0.817); /* rgba(95, 182, 182, 0.806) */ 
             margin: 0;
             opacity:0;
             transition: .4s;
