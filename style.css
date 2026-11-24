@@ -25,7 +25,9 @@ body{
     padding: 4px;
 }
     @media (max-width: 450px){
-        margin: 10px;
+        body{
+            margin: 10px;
+        }
     }
 
 /* txt */ 
@@ -61,6 +63,11 @@ form{
     width: 100%;
     margin-right: auto;
 }
+    @media (max-width: 450px){
+        form{
+             padding-left: 10px;
+        }
+    }
 
 input
 textarea{
@@ -223,7 +230,9 @@ aside{
     text-align: right;
 }
     @media (max-width: 1600px){
+        .footer{
         font-size: 20px;
+        }
     }
 
 footer{
