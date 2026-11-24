@@ -229,6 +229,11 @@ aside{
   object-fit: cover;
   transition: transform 0.5s;
 }
+@media (max-width: 600px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+}
 
 .lightbox {
   max-width: 90vw;
