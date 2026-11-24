@@ -238,7 +238,7 @@ footer{
     }
 }
 
-/* grilles */ 
+/* grille */ 
 .grid{
     display: grid;
     grid-template-columns: 1fr;
