@@ -24,6 +24,9 @@ body{
     margin: auto;
     padding: 4px;
 }
+    @media (max-width: 450px){
+        margin: 10px;
+    }
 
 /* txt */ 
 h1{
@@ -177,7 +180,7 @@ header{
 .entete .right{
     text-align: right;
 }
-    @media (min-width: 2000px){
+    @media (max-width: 1600px){
         .entete{
             padding-bottom: 4px;
             padding-top: 8px;
@@ -219,6 +222,9 @@ aside{
 .footer .right{
     text-align: right;
 }
+    @media (max-width: 1600px){
+        font-size: 20px;
+    }
 
 footer{
     text-align: center;
