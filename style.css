@@ -190,13 +190,13 @@ footer{
     font-size: 12px;
 }
 
-@media (max-width: 750px){
+@media (max-width: 600px){
     footer{
         font-size: 10px;
     }
     aside{
-        height: calc(600px - 150px);
-        top: 150px;
+        height: calc(600px - 140px);
+        top: 140px;
     }
 }
 
