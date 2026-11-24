@@ -194,7 +194,7 @@ aside{
         top: 160px;
     }
     @media (max-width 400px){
-        height: calc(1000px - 160px);
+        height: calc(1400px - 160px);
         top: 160px;
     }
 
